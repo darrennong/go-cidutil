@@ -51,7 +51,7 @@ func (enc Encoder) noopRecode(v string) (bool, error) {
 }
 
 func cidVer(v string) int {
-	if len(v) == 46 && v[:2] == "Qm" {
+	if len(v) == 46 && v[:2] == "Ci" {
 		return 0
 	} else {
 		return 1
